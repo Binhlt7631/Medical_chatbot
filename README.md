@@ -59,8 +59,8 @@
 
 
 
-## Project Structure
-
+### Project Structure
+```
 .
 ├── .env
 ├── .gitignore
@@ -86,6 +86,7 @@
 ├── template.py
 └── templates/
     └── index.html
+```
 
 
 
