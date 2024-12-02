@@ -24,11 +24,11 @@
     pip install -r requirements.txt
     ```
 
-4. **Create a `.env` file in the root directory and add your Pinecone & OpenAI credentials**
+4. **Create a `.env` file in the root directory and add your Pinecone & Hugging Face credentials**
 
     ```ini
-    PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+   PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+   HUGGINGFACE_API_KEY  = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     ```
 
 5. **Store embeddings to Pinecone**
