@@ -61,8 +61,6 @@
 
 ## Project Structure
 
-Workspace
-Dưới đây là file README.md chuyên nghiệp cho dự án của bạn:
 
 . ├── .env ├── .gitignore ├── app.py ├── Data/ ├── Generative_AI_Project.egg-info/ │ ├── dependency_links.txt │ ├── PKG-INFO │ ├── SOURCES.txt │ ├── top_level.txt ├── README.md ├── requirements.txt ├── research/ │ └── trials.ipynb ├── setup.py ├── src/ │ ├── init.py │ ├── pycache/ │ ├── helper.py │ └── store_index.py ├── static/ │ └── style.css ├── template.py └── templates/ └── index.html
 
