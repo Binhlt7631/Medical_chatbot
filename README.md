@@ -1,71 +1,70 @@
-# End-to-end-Medical-Chatbot-Generative-AI
+# End-to-end Medical Chatbot Generative AI
 
+## How to run?
 
-# How to run?
 ### STEPS:
 
-Clone the repository
+1. **Clone the repository**
 
-```bash
-Project repo: https://github.com/
-```
-### STEP 01- Create a conda environment after opening the repository
+    ```bash
+    git clone https://github.com/your-repo-url.git
+    cd your-repo-url
+    ```
 
-```bash
-conda create -n medicalbot python=3.10 -y
-```
+2. **Create a conda environment**
 
-```bash
-conda activate medicalbot
-```
+    ```bash
+    conda create -n medicalbot python=3.10 -y
+    conda activate medicalbot
+    ```
 
+3. **Install the requirements**
 
-### STEP 02- install the requirements
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+4. **Create a `.env` file in the root directory and add your Pinecone & OpenAI credentials**
 
-### Create a `.env` file in the root directory and add your Pinecone & openai credentials as follows:
+    ```ini
+    PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ```
 
-```ini
-PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
+5. **Store embeddings to Pinecone**
 
+    ```bash
+    python src/store_index.py
+    ```
 
-```bash
-# run the following command to store embeddings to pinecone
-python store_index.py
-```
+6. **Run the application**
 
-```bash
-# Finally run the following command
-python app.py
-```
+    ```bash
+    python app.py
+    ```
 
-Now,
-```bash
-open up localhost:
-```
+7. **Open up localhost**
 
+    ```bash
+    open http://localhost:8080
+    ```
 
-### Techstack Used:
+## Techstack Used:
 
 - Python
 - LangChain
 - Flask
-- GPT
+- Hugging face
 - Pinecone
 
 
-### Setup github secrets:
 
-   - AWS_ACCESS_KEY_ID
-   - AWS_SECRET_ACCESS_KEY
-   - AWS_DEFAULT_REGION
-   - ECR_REPO
-   - PINECONE_API_KEY
-   - OPENAI_API_KEY
+## Project Structure
 
-    
+Workspace
+Dưới đây là file README.md chuyên nghiệp cho dự án của bạn:
+
+. ├── .env ├── .gitignore ├── app.py ├── Data/ ├── Generative_AI_Project.egg-info/ │ ├── dependency_links.txt │ ├── PKG-INFO │ ├── SOURCES.txt │ ├── top_level.txt ├── README.md ├── requirements.txt ├── research/ │ └── trials.ipynb ├── setup.py ├── src/ │ ├── init.py │ ├── pycache/ │ ├── helper.py │ └── store_index.py ├── static/ │ └── style.css ├── template.py └── templates/ └── index.html
+
+
+
